@@ -22,7 +22,7 @@ services:
       PGADMIN_DEFAULT_PASSWORD: saurabhs
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     volumes:
-      - pgadmin_data:/var/data/pgadmin
+      - pgadmin:/var/data/pgadmin
     ports:
       - "5050:80"
     networks:
@@ -30,9 +30,9 @@ services:
     restart: unless-stopped
 
 volumes:
-  postgres_data:
-  pgadmin_data:
+  postgres:
+  pgadmin:
 
 networks:
-  postgres_network:
+  postgres:
     driver: bridge
