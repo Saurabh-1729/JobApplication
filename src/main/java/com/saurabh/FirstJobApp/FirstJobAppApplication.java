@@ -27,3 +27,6 @@ public class FirstJobAppApplication {
 //Your classes don’t depend on each other too tightly
 //They depend on interfaces or abstractions instead of specific implementations
 //This makes your code more flexible, testable, and maintainable
+
+
+// Ping is to check if one container is able to communicate with the other container which are on the same network
